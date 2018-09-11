@@ -1,0 +1,100 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+This file is solver of Quadratic Equation.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cassert$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}~-\/1\hypertarget{main_8cpp_ad94c8fc0f62c0ec94bb2f27dcdc4e313}{}\label{main_8cpp_ad94c8fc0f62c0ec94bb2f27dcdc4e313}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a527950d80b5ab28e71ca2b04fd36bd0e}{Solve\+Line} (double a, double b, double $\ast$x)
+\item 
+int \hyperlink{main_8cpp_ab2dd9b24e0e487efdd1cd1f40dd3a023}{Solve\+Square} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\item 
+void {\bfseries Solve\+Line\+Test} ()\hypertarget{main_8cpp_a318a1ee6bc0c028bbd50d23fa7804fd5}{}\label{main_8cpp_a318a1ee6bc0c028bbd50d23fa7804fd5}
+
+\item 
+void {\bfseries Solve\+Square\+Test} ()\hypertarget{main_8cpp_ac1bc37a6600d69a1748aaa02962ed656}{}\label{main_8cpp_ac1bc37a6600d69a1748aaa02962ed656}
+
+\item 
+void {\bfseries Tester} ()\hypertarget{main_8cpp_a173e4a638f9a265711102103873fc25b}{}\label{main_8cpp_a173e4a638f9a265711102103873fc25b}
+
+\item 
+int {\bfseries main} ()\hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file is solver of Quadratic Equation. 
+
+
+
+\subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!Solve\+Line@{Solve\+Line}}
+\index{Solve\+Line@{Solve\+Line}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Solve\+Line(double a, double b, double $\ast$x)}{SolveLine(double a, double b, double *x)}}]{\setlength{\rightskip}{0pt plus 5cm}int Solve\+Line (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{double}]{b, }
+\item[{double $\ast$}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a527950d80b5ab28e71ca2b04fd36bd0e}{}\label{main_8cpp_a527950d80b5ab28e71ca2b04fd36bd0e}
+Solves a linear equation ax + b = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & a-\/coffecient \\
+\hline
+\mbox{\tt in}  & {\em b} & b-\/coffecient \\
+\hline
+\mbox{\tt out}  & {\em x} & Pointer to the root\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of roots
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If you\textquotesingle{}ve got infinite number of roots, this function returns S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS 
+\end{DoxyNote}
+\index{main.\+cpp@{main.\+cpp}!Solve\+Square@{Solve\+Square}}
+\index{Solve\+Square@{Solve\+Square}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Solve\+Square(double a, double b, double c, double $\ast$x1, double $\ast$x2)}{SolveSquare(double a, double b, double c, double *x1, double *x2)}}]{\setlength{\rightskip}{0pt plus 5cm}int Solve\+Square (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{double}]{b, }
+\item[{double}]{c, }
+\item[{double $\ast$}]{x1, }
+\item[{double $\ast$}]{x2}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_ab2dd9b24e0e487efdd1cd1f40dd3a023}{}\label{main_8cpp_ab2dd9b24e0e487efdd1cd1f40dd3a023}
+Solves a quadratic equation ax$^\wedge$2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & a-\/coffecient \\
+\hline
+\mbox{\tt in}  & {\em b} & b-\/coffecient \\
+\hline
+\mbox{\tt in}  & {\em c} & c-\/coffecient \\
+\hline
+\mbox{\tt out}  & {\em x1} & Pointer to the first root \\
+\hline
+\mbox{\tt out}  & {\em x2} & Pointer to the second root\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of roots 
+\end{DoxyReturn}

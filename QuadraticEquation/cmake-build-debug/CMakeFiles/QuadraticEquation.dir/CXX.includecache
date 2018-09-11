@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ilya/CLionProjects/AKOS/QuadraticEquation/main.cpp
+iostream
+-
+cassert
+-
+cmath
+-
+
+/home/ilya/CLionProjects/AKOS/QuadraticEquation/main.h
+iostream
+-
+cassert
+-
+cmath
+-
+
+/home/ilya/CLionProjects/AKOS/QuadraticEquation/test.cpp
+main.h
+/home/ilya/CLionProjects/AKOS/QuadraticEquation/main.h
+
