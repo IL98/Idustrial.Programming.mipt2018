@@ -3,61 +3,117 @@
  * @brief This file contains the test for the functions of Quadratic Equation
  */
 
-#include "main.h"
+#include "quadratic.h"
 
 
-void SolveLineTest()
+template<typename T1, typename T2>
+class AssertionEqual
 {
-	double x = 0;
-	assert(SolveLine(0, 1, &x) == 0);
-	assert(SolveLine(0, 0, &x) == SS_INF_ROOTS);
+public:
+		bool if_err_;
+public:
+		AssertionEqual(const T1& t1, const T2& t2, const char * description)
+		{
+			if_err_ = false;
+			if (abs(t1 - t2) >= 0.000001) {
+				std::cout << "----Assertion failed : roots count : " << t1 << " != "
+															<< t2 << "(expected) : " << description << std::endl;
+				if_err_ = true;
+			}
+		}
+};
 
-	assert(SolveLine(2, 2, &x) == 1);
-	assert(x == -1);
+class SolveLineTest
+{
+		double x = 0;
+public:
+		SolveLineTest(double a, double b,
+												int expd_root_count, const char * description)
+		{
+			AssertionEqual<int, int> assertionEqual(SolveLine(a, b, &x), expd_root_count, description);
 
-	assert(SolveLine(1, 0, &x) == 1);
-	assert(x == 0);
+			if (!assertionEqual.if_err_ && expd_root_count == 1)
+			{
+				if (abs(a*x + b) >= 0.000001) {
+					std::cout << "----Assertion failed : " << x << " is not a root " << " : " << description << std:: endl;
+				}
+			}
+		}
+};
 
-	assert(SolveLine(1, 1.0000001, &x) == 1);
-	assert(x == -1.0000001);
+class SolveSquareTest
+{
+		double x1 = 0, x2 = 0;
+public:
 
-	assert(SolveLine(-5, 3, &x) == 1);
-	assert(x == 0.6);
+		SolveSquareTest(double a, double b, double c,
+													int expd_root_count, const char * description)
+		{
+			AssertionEqual<int, int> assertionEqual(SolveSquare(a, b, c, &x1, &x2), expd_root_count, description);
 
-	assert(SolveLine(17, -13, &x) == 1);
-	assert(abs(x - 0.76470588) < 0.00000001);
+			if (!assertionEqual.if_err_ && expd_root_count != 0 && expd_root_count != ss_inf_roots)
+			{
+				if (abs(a*x1*x1 + b*x1 + c) >= 0.000001)
+				{
+					std::cout << "----Assertion failed : " << x1 << " is not a root " << " : " << description << std::endl;
+				}
+
+				if (expd_root_count == 2) { // if we have two roots, let's check second root x2
+
+					if (abs(a*x2*x2 + b*x2 + c) >= 0.000001)
+					{
+						std::cout << "----Assertion failed : " << x2 << " is not a root " << " : " << description << std::endl;
+					}
+				}
+			}
+		}
+};
+
+void SolveLineTester()
+{
+	SolveLineTest(0, 1, 0, "SolveLineTest1 : 1=0");
+
+	SolveLineTest(0, 0, ss_inf_roots, "SolveLineTest2 : 0=0");
+
+	SolveLineTest(2, 2, 1, "SolveLineTest3 : 2x+2=0");
+
+	SolveLineTest(1, 0, 1, "SolveLineTest4 : x=0");
+
+	SolveLineTest(1, 1.0000001, 1, "SolveLineTest5 : x+1.0000001=0");
+
+	SolveLineTest(-5, 3, 1, "SolveLineTest6 : -5x+3=0");
+
+	SolveLineTest(17, -13, 1, "SolveLineTest7 : 17x-13=0");
 
 
-	std::cout<<"SolveLineTest is OK"<<std::endl;
+	std::cout<<"SolveLineTester completed"<<std::endl;
 }
 
-void SolveSquareTest()
+void SolveSquareTester()
 {
-	double x1 = 0, x2 = 0;
+	SolveSquareTest(0, 0, 0, ss_inf_roots, "SolveSquareTest1 : 0=0");
 
-	assert(SolveSquare(0, 0, 0, &x1, &x2) == SS_INF_ROOTS);
+	SolveSquareTest(0, 0, 1, 0, "SolveSquareTest2 : 1=0");
 
-	assert(SolveSquare(0, 0, 1, &x1, &x2) == 0);
+	SolveSquareTest(0, 1, 1, 1, "SolveSquareTest3 : x+1=0");
 
-	assert(SolveSquare(0, 1, 1, &x1, &x2) == 1);
-	assert(x1 == -1);
+	SolveSquareTest(1, 2, 1, 1, "SolveSquareTest4 : x^2 + 2x + 1 = 0");
 
-	assert(SolveSquare(1, 2, 1, &x1, &x2) == 1);
-	assert(x1 == -1 && x2 ==-1);
+	SolveSquareTest(2, 3, 5, 0, "SolveSquareTest5 : 2x^2 + 3x + 5 = 0");
 
-	assert(SolveSquare(2, 3, 5, &x1, &x2) == 0);
+	SolveSquareTest(1, 5, 6, 2, "SolveSquareTest6 : x^2 + 5x + 6 = 0");
 
-	assert(SolveSquare(1, 5, 6, &x1, &x2) == 2);
-	assert(x1 == -3 && x2 == -2);
+	SolveSquareTest(17.24, 38.71, 14.56, 2,
+									"SolveSquareTest6 : 17.24x^2 + 38.71x + 14.56 = 0");
 
+	SolveSquareTest(-3, 1, 0, 2, "SolveSquareTest7 : -3x^2 + x = 0");
 
-	assert(SolveSquare(17.24, 38.71, 14.56, &x1, &x2) == 2);
-	assert(abs(17.24*x1*x1 + 38.71*x1 + 14.56) < 0.000001);
-	assert(abs(17.24*x2*x2 + 38.71*x2 + 14.56) < 0.000001);
+	std::cout<<"SolveSquareTester completed"<<std::endl;
+}
 
-	assert(SolveSquare(-3, 1, 0, &x1, &x2) == 2);
-	assert(abs(x1 - 0.33333) < 0.00001);
-	assert(x2 == 0);
+void Tester(){
+	SolveLineTester();
+	SolveSquareTester();
 
-	std::cout<<"SolveSquareTest is OK"<<std::endl;
+	std::cout << "---FINISHED---" << std::endl;
 }

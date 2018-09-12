@@ -1,4 +1,4 @@
-# Install script for directory: /home/ilya/CLionProjects/AKOS/QuadraticEquation
+# Install script for directory: /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

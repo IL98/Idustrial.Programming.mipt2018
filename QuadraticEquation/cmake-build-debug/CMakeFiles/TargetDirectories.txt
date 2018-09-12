@@ -1,3 +1,3 @@
-/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles/QuadraticEquation.dir
+/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles/QuadraticEquation.dir

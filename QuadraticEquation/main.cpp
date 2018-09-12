@@ -3,11 +3,9 @@
  * @brief This file is solver of Quadratic Equation
  */
 
-#include <iostream>
-#include <cassert>
-#include <cmath>
+#include "quadratic.h"
 
-#define SS_INF_ROOTS -1
+#define TESTING
 
 
 /*!
@@ -32,7 +30,7 @@ int SolveLine(double a, double b, double* x)
 
 	if (a == 0)
 	{
-		return (b == 0) ? SS_INF_ROOTS : 0;
+		return (b == 0) ? ss_inf_roots : 0;
 	}
 	else
 	{
@@ -73,9 +71,9 @@ int SolveSquare(double a, double b, double c,
 	else /* if (a != 0) */
 	{
 		double d = b*b - 4*a*c;
-		if (d == 0)
+		if (abs(d) < 0.0000001)
 		{
-			*x1 = *x2 = -b / (2*a);
+			*x1 = -b / (2*a);
 			return 1;
 		}
 		else /*if (d != 0)*/
@@ -99,23 +97,13 @@ int SolveSquare(double a, double b, double c,
 }
 
 
-void SolveLineTest();
-
-void SolveSquareTest();
-
-void Tester(){
-	SolveLineTest();
-	SolveSquareTest();
-
-	std::cout << "---Everything is OK---" << std::endl;
-}
-
 int main()
 {
+#ifdef TESTING
+	Tester();
 
-//	Tester();
-//	return 0;
-
+	return 0;
+#endif
 
 	std::cout << "# Hello, it's Quadratic Equation solver\n" <<
 							 "# September, 2018\n\n";
@@ -141,7 +129,7 @@ int main()
 											   ", x2 = "<< x2 << std::endl;
 						break;
 
-		case SS_INF_ROOTS: std::cout << "any number"<< std::endl;
+		case ss_inf_roots: std::cout << "any number"<< std::endl;
 						break;
 
 		default: std::cout << "main(): Error: quantityRoots = "

@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ilya/CLionProjects/AKOS/QuadraticEquation/main.cpp
+/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/main.cpp
+quadratic.h
+/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/quadratic.h
+
+/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/quadratic.h
 iostream
 -
 cassert
@@ -14,15 +18,7 @@ cassert
 cmath
 -
 
-/home/ilya/CLionProjects/AKOS/QuadraticEquation/main.h
-iostream
--
-cassert
--
-cmath
--
-
-/home/ilya/CLionProjects/AKOS/QuadraticEquation/test.cpp
-main.h
-/home/ilya/CLionProjects/AKOS/QuadraticEquation/main.h
+/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/test.cpp
+quadratic.h
+/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/quadratic.h
 

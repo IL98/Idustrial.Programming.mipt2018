@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /home/ilya/Git/Idustrial.Programming.mipt2018

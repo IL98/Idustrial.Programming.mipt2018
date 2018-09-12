@@ -43,10 +43,10 @@ RM = /home/ilya/workspace/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ilya/CLionProjects/AKOS/QuadraticEquation
+CMAKE_SOURCE_DIR = /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/QuadraticEquation.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/QuadraticEquation.dir/flags.make
 
 CMakeFiles/QuadraticEquation.dir/main.cpp.o: CMakeFiles/QuadraticEquation.dir/flags.make
 CMakeFiles/QuadraticEquation.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QuadraticEquation.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuadraticEquation.dir/main.cpp.o -c /home/ilya/CLionProjects/AKOS/QuadraticEquation/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QuadraticEquation.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuadraticEquation.dir/main.cpp.o -c /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/main.cpp
 
 CMakeFiles/QuadraticEquation.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuadraticEquation.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/AKOS/QuadraticEquation/main.cpp > CMakeFiles/QuadraticEquation.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/main.cpp > CMakeFiles/QuadraticEquation.dir/main.cpp.i
 
 CMakeFiles/QuadraticEquation.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuadraticEquation.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/AKOS/QuadraticEquation/main.cpp -o CMakeFiles/QuadraticEquation.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/main.cpp -o CMakeFiles/QuadraticEquation.dir/main.cpp.s
 
 CMakeFiles/QuadraticEquation.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/QuadraticEquation.dir/main.cpp.o.provides.build: CMakeFiles/Quadratic
 
 CMakeFiles/QuadraticEquation.dir/test.cpp.o: CMakeFiles/QuadraticEquation.dir/flags.make
 CMakeFiles/QuadraticEquation.dir/test.cpp.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QuadraticEquation.dir/test.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuadraticEquation.dir/test.cpp.o -c /home/ilya/CLionProjects/AKOS/QuadraticEquation/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QuadraticEquation.dir/test.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuadraticEquation.dir/test.cpp.o -c /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/test.cpp
 
 CMakeFiles/QuadraticEquation.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuadraticEquation.dir/test.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/CLionProjects/AKOS/QuadraticEquation/test.cpp > CMakeFiles/QuadraticEquation.dir/test.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/test.cpp > CMakeFiles/QuadraticEquation.dir/test.cpp.i
 
 CMakeFiles/QuadraticEquation.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuadraticEquation.dir/test.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/CLionProjects/AKOS/QuadraticEquation/test.cpp -o CMakeFiles/QuadraticEquation.dir/test.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/test.cpp -o CMakeFiles/QuadraticEquation.dir/test.cpp.s
 
 CMakeFiles/QuadraticEquation.dir/test.cpp.o.requires:
 
@@ -117,7 +117,7 @@ QuadraticEquation: CMakeFiles/QuadraticEquation.dir/main.cpp.o
 QuadraticEquation: CMakeFiles/QuadraticEquation.dir/test.cpp.o
 QuadraticEquation: CMakeFiles/QuadraticEquation.dir/build.make
 QuadraticEquation: CMakeFiles/QuadraticEquation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable QuadraticEquation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable QuadraticEquation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QuadraticEquation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/QuadraticEquation.dir/clean:
 .PHONY : CMakeFiles/QuadraticEquation.dir/clean
 
 CMakeFiles/QuadraticEquation.dir/depend:
-	cd /home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ilya/CLionProjects/AKOS/QuadraticEquation /home/ilya/CLionProjects/AKOS/QuadraticEquation /home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug /home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug /home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles/QuadraticEquation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug /home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles/QuadraticEquation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/QuadraticEquation.dir/depend
 

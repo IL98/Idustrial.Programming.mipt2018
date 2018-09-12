@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ilya/CLionProjects/AKOS/QuadraticEquation/main.cpp" "/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles/QuadraticEquation.dir/main.cpp.o"
-  "/home/ilya/CLionProjects/AKOS/QuadraticEquation/test.cpp" "/home/ilya/CLionProjects/AKOS/QuadraticEquation/cmake-build-debug/CMakeFiles/QuadraticEquation.dir/test.cpp.o"
+  "/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/main.cpp" "/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles/QuadraticEquation.dir/main.cpp.o"
+  "/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/test.cpp" "/home/ilya/Git/Idustrial.Programming.mipt2018/QuadraticEquation/cmake-build-debug/CMakeFiles/QuadraticEquation.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
